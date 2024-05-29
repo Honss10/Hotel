@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones - Hotel Banano</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        .card-title {
+            color: black;
+            font-weight: bold;
+        }
+        .card-text {
+            color: black;
+        }
+        .lightbox-overlay {
+            background: rgba(0,0,0,0.9) !important;
+        }
+         /* Estilo para el modal */
+         .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 50%;
+            max-height: 120%;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html">Hotel Banano</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="habitaciones" class="container my-5">
+        <h2 class="text-center">Nuestras Habitaciones</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/Img/Imagen1.jpg" class="card-img-top" alt="Habitación Deluxe" onclick="openModal('/Img/Imagen1.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title">Habitación Deluxe</h5>
+                        <p class="card-text">Disfruta de una estancia cómoda y lujosa en nuestra Habitación Deluxe, equipada con todas las comodidades modernas.</p>
+                        <h5>$120.000 por noche, hasta 2 personas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/Img/Imagen2.jpg" class="card-img-top" alt="Suite Ejecutiva" onclick="openModal('/Img/Imagen2.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title">Suite Ejecutiva</h5>
+                        <p class="card-text">Nuestra Suite Ejecutiva ofrece un espacio amplio y elegante, ideal para viajeros de negocios y estancias prolongadas.</p>
+                        <h5>$300.000 por noche, hasta 4 personas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/Img/Imagen3.jpg" class="card-img-top" alt="Habitación Familiar" onclick="openModal('/Img/Imagen3.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title">Habitación Familiar</h5>
+                        <p class="card-text">Perfecta para familias, esta habitación ofrece un espacio acogedor y práctico con todas las facilidades necesarias.</p>
+                        <h5>$200.000 por noche, hasta 4 personas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para las imágenes -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Hotel Banano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        // Función para abrir el modal con la imagen clicada
+        function openModal(imgSrc) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

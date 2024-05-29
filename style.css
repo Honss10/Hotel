@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .navbar-nav .nav-link {
+    font-size: 1rem;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+#hero {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 80vh;
+    
+}
+
+#hero h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: absolute;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#hero p {
+    font-size: 2rem;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    position:absolute;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+#sobre-nosotros img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#habitaciones .card, #servicios .card {
+    margin-bottom: 1.5rem;
+}
+
+.boton {
+    background-color: #0097A7;;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 20%;
+    text-align: center;
+    border: none;
+    position: absolute;
+
+}
+.boton:hover {
+    cursor: pointer;
+}
